@@ -1,0 +1,10 @@
+//one way to take a list of words and capitalize each word no matter what capitalization is currently
+//the code below is for a 3 word phrase
+UPPER(LEFT(SPLIT([City], " ",1),1)) +
+RIght(LOWER(SPLIT([City], " ",1)),LEN(LOWER(SPLIT([City], " ",1)))-1)
++ " " +
+UPPER(LEFT(SPLIT([City], " ",2),1)) +
+RIght(LOWER(SPLIT([City], " ",2)),LEN(LOWER(SPLIT([City], " ",2)))-1) +
+" " +
+UPPER(LEFT(SPLIT([City], " ",3),1)) +
+RIght(LOWER(SPLIT([City], " ",3)),LEN(LOWER(SPLIT([City], " ",3)))-1)
